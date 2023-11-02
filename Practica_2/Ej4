@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+limiteNumero = int(input("Introduzca el limite: "))
+contadorMultiplos = 0
+num = 0
+suma = 0
+
+#Calculamos numeros del 1 al 100 que son a la vez multiplos de 2 y de 3
+for num in range(0, limiteNumero + 1):
+    if num % 3 == 0 and num % 2 == 0:
+        print num
+        suma += num
+        contadorMultiplos += 1
+print "La suma es:  ",suma
+print "El numero total de multiplos de 2 y 3 son: ",contadorMultiplos

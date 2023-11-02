@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+num = 0
+sumaImpar = 0
+sumaPar = 0
+#Obtenemos todos los numeros impares del 1 al 100 y calculamos su suma
+for num in reversed(range(0,101)):
+    if num % 2 != 0:
+        print(num)
+        sumaImpar += num
+    if num % 2 == 0:
+        sumaPar += num
+    num -= 1
+        
+print "La suma de todos los numeros impares del 1 al 100 es: ", sumaImpar
+print "La suma de todos los numeros pares del 1 al 100 es: ", sumaPar
+        
+
+

@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+contadorMultiplos = 0
+num = 0
+
+#Calcula los numeros multiplos de 3 entre el 1 y el 100
+for num in range(0, 101):
+    if num % 3 == 0:
+        print num
+        contadorMultiplos += 1
+print "El numero de multiplos entre el 1 y el 100 es: ",contadorMultiplos

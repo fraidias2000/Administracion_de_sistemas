@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+primerNumero = int(input("Introduzca el primer numero: "))
+segundoNumero = int(input("Introduzca el segundo numero: "))
+numero = 0
+suma = 0
+totalPares = 0
+
+#Obtener los numeros que existen entre los dos numeros que ha introducido el usuario
+if primerNumero < segundoNumero:
+    numerosTotales = (segundoNumero + 1) - primerNumero
+    for numero in range(primerNumero,segundoNumero + 1):
+        print(numero)
+        #Comprobamos numero total de pares y calculamos la suma de ellos
+        if numero % 2 == 0:
+            totalPares += 1
+            suma = suma + numero
+else:
+    numerosTotales = (primerNumero + 1) - segundoNumero
+    for numero in range(segundoNumero,primerNumero + 1):
+        print(numero)
+        #Comprobamos numero total de pares y calculamos la suma de ellos
+        if numero % 2 == 0:
+            totalPares += 1
+            suma = suma + numero
+print "El numero total de numeros es: ", numerosTotales    
+print "El numero total de pares es: ", totalPares
+print "La suma de los pares es: ", suma
